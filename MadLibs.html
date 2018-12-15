@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link rel="stylesheet" href="style.css">
+
+<div class="header"></div>
+
+  <nav>
+    <div id="topnav">
+
+          <div class="subnav">
+            <button href="bio.html" class="subnavbtn">Bio <i class="fa fa-caret-down">
+            </i></button>
+              <div class="subnav-content">
+                <a href="bio.html">Bio</a>
+                <a href="#team">Contact</a>
+              </div>
+          </div>
+
+
+    <a href="Theater.html">Theater</a>
+    <a href="blog.html">MMS</a>
+    <a href="Lists.html">Lists</a>
+
+      <div class="subnav">
+        <button class="subnavbtn">MadLibs <i class="fa fa-caret-down">
+        </i></button>
+          <div class="subnav-content">
+            <a href="MadLibs.html">MadLibs #1</a>
+            <a href="MadLibs2.html">MadLibs #2</a>
+            <a href="#careers">MadLibs #3</a>
+          </div>
+      </div>
+
+    </div>
+  </nav>
+
+  <div class="container">
+    <h2>The Story Maker</h2>
+
+  </div>
+
+<link rel="stylesheet" type="text/css" href="style.css">
+
+<body>
+
+</body>
+
+</head>
+
+<script language = "JavaScript">
+// start
+var questions = 4;
+var questionsLeft = ' [' + questions + ' questions left]';
+var time = prompt('Please type in a time day' + questionsLeft);
+questions -= 1;
+
+questionsLeft = ' [' + questions + ' questions left]';
+var adjective = prompt('Please type in a adjective ' + questionsLeft);
+questions -= 1;
+
+questionsLeft = ' [' + questions + ' questions left]';
+var gender = prompt('Please type in a gender ' + questionsLeft);
+questions -= 1;
+
+questionsLeft = ' [' + questions + ' questions left]';
+var hobby = prompt('Please type in a hobby ' + questionsLeft);
+alert('All done. Ready for the message?');
+
+var sentence = "<h2>One " + time;
+sentence += ' there was a ' + adjective;
+sentence += ' ' +gender;
+sentence += ' who loved ' + hobby + '.</h2>';
+document.write(sentence);
+// end
+</script>
+
+</html>

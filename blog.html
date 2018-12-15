@@ -1,0 +1,82 @@
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<style>
+.card {
+    background-color: #B7B0B0;
+    padding: 20px;
+    margin-top: 20px;
+    margin: 1%
+}
+</style>
+
+<body>
+
+<div class="header"></div>
+
+  <nav>
+    <div id="topnav">
+
+          <div class="subnav">
+            <button class="subnavbtn">Bio <i class="fa fa-caret-down">
+            </i></button>
+              <div class="subnav-content">
+                <a href="bio.html">Bio</a>
+                <a href="#team">Contact</a>
+              </div>
+          </div>
+
+    <a href="Theater.html">Theater</a>
+    <a href="blog.html">MMS</a>
+    <a href="Lists.html">Lists</a>
+
+      <div class="subnav">
+        <button class="subnavbtn">MadLibs <i class="fa fa-caret-down">
+        </i></button>
+          <div class="subnav-content">
+            <a href="MadLibs.html">MadLibs #1</a>
+            <a href="MadLibs2.html">MadLibs #2</a>
+            <a href="#careers">MadLibs #3</a>
+          </div>
+      </div>
+
+    </div>
+  </nav>
+
+<h1>My Blog!</h1>
+
+<div class="card">
+  <h2>OCT. 15, 2018</h2>
+    <img src="MyPhoto.jpg" alt="hi" height="475" width="750">
+    <p>This is the last day that we can keep making the website in class.</p>
+    <p>I'm so sad, I actually liked making my website with everyone.</p>
+</div>
+
+<div class="card">
+  <h2>OCT. 16, 2018</h2>
+    <p>It's swictharoo day, and I like the outfit I am wearing right now. I lokk better than I thought I would.</p>
+    <p>This is so weird, being Essence is harder than I thought it would be.</p>
+</div>
+
+<script>
+  window.onscroll = function() {myFunction()};
+
+  var topnav = document.getElementById("topnav");
+  var sticky = topnav.offsetTop;
+
+  function myFunction() {
+    if (window.pageYOffset >= sticky) {
+      topnav.classList.add("sticky")
+    } else {
+      topnav.classList.remove("sticky");
+    }
+  }
+</script>
+
+</body>
